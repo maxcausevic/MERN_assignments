@@ -1,9 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
 
+import PersonCard from './components/PersonCard';
 function App() {
   return (
     <div className="App">
+      <PersonCard firstName={"Maxine"}lastName={"Causevic"}age={33} hairColor={"black"}/>
+      <PersonCard firstName={"Allen"}lastName={"Causevic"}age={36} hairColor={"brown"}/>
+      <PersonCard firstName={"Mia"}lastName={"Causevic"}age={1} hairColor={"brown"}/>
+      <PersonCard firstName={"Kimberly"}lastName={"Wiskup"}age={34} hairColor={"blonde"}/>
+      
+
       <header className="App-header">
       <>                
                 <h1>Hello Dojo!</h1>                
@@ -33,3 +40,4 @@ function App() {
 }
 
 export default App;
+
