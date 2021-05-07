@@ -10,6 +10,7 @@ function App() {
     email :"",
     password: "",
     confirmPassword: "",
+    hasBeenSubmitted: false
   });
    
   return (
