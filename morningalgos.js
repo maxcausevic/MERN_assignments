@@ -158,3 +158,16 @@ console.log(mergeSort([7,4,8,5,3,2,9]))
 
 // console.log(lefthalf)
 // console.log(righthalf)
+
+function insertionSort(arr) {
+    for (let i = 1; i < arr.length; i++) {
+        let j = i;
+        if (arr[j] < arr[j - 1]) {
+            while (arr[j] < arr[j - 1]) {
+                [arr[j], arr[j - 1]] = [arr[j - 1], arr[j]];
+                j--;
+            }
+        }
+    }
+    return arr;
+}
