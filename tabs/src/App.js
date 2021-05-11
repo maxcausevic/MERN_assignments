@@ -7,9 +7,9 @@ import './App.css';
 function App() {
   const[list, setList] = useState([]);
   return (
-    <div className="App container" style={{width:'800px'}}>
-      {list.map(task =>(
-        <Task task={task} setList={setList} />
+    <div className="App container" style={{width:"800px"}}>
+      {list.map((task,i) =>(
+        <Task task={task} setList={setList} index={i} list={list}/>
       ))}
       <Input list={list} setList={setList}/>
       

@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 
 const Input = (props) => {
     const {list, setList} = props;
@@ -12,12 +12,11 @@ const Input = (props) => {
     const onClick = (e) =>{
         setList([...list, task])
         e.target.value = ""
-        task = "";
     }
     return (
         <div className="container w-50 mt-5">
-            <input className="form-control" onChange={onChange} type="text" name="task"/>
-            <button className="btn btn-primary btn-block mt-1" onclick={onClick}>Add Task</button>
+            <input onChange={onChange} className="form-control"  type="text" name="task"/>
+            <button className="btn btn-primary btn-block mt-1" onClick={onClick}>Add Task</button>
         </div>
     )
 
